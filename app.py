@@ -41,7 +41,7 @@ st.caption('Explora temperatura, humedad y ozono sobre el dominio del recorte ·
 
 @st.cache_resource
 def cargar():
-    return xr.open_dataset(Path.home() / 'Desktop' /  'Temas selectos Python' /'clase_stramlit' / 'gfs_recorte.nc')
+    return xr.open_dataset('gfs_recorte.nc')
 
 
 ds = cargar()
